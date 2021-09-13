@@ -46,7 +46,7 @@ pipeline {
         }
 
         stage('Deploy') {
-            agent {label 'node01'}
+            // agent {label 'node01'}
             steps {
                 sh './pipeline6/jenkins/deploy/deploy.sh'
             }
